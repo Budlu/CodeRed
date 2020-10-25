@@ -5,8 +5,10 @@ from twilio.rest import Client
 
 # Sends text to phone number sendTo with content msg
 def send_text(sendTo, msg):
-    account_sid = 'AC46368bace24b8dd3f7290ecca8d6e664'
-    auth_token = 'ab08351b6999fc8f3123da18e1b60332'
+    # Account SID and authentication token have been intentionally omitted
+    # This code will not work until an account SID and authentication token from Twilio have been supplied
+    account_sid = #########
+    auth_token = #########
     client = Client(account_sid, auth_token)
 
     message = client.messages.create(body=msg, from_='+12513151614', to=sendTo)
